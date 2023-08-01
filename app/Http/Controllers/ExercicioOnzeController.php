@@ -8,26 +8,26 @@ class ExercicioOnzeController extends Controller
 {
     public function calculadora(Request $request)
     {
-
+        
         switch ($request->operação) {
-            case 'm' || 'M':
+            case 'M':
                 $resultado = $request->n1 * $request->n2;
                         
               
                 break;
-            case 'd' || 'D':
+            case  'D':
 
               
                     $resultado =    $request->n1 / $request->n2;
                
                 break;
-            case 'a' || 'A':
+            case  'A':
 
                 
                     $resultado =    $request->n1 + $request->n2;
               
                 break;
-            case 's' || 'S':
+            case  'S':
 
                     $resultado =    $request->n1 - $request->n2;
               

@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioQuatroFormRequest;
 use Illuminate\Http\Request;
 
 class ExercicioQuatroController extends Controller
 {
-    public function verificador(Request $request)
+    public function verificador(ExercicioQuatroFormRequest $request)
     {
-        $Entrada = $request->Entrada;
+        $entrada = $request->entrada;
 
-        if ($Entrada % 2 == 0) {
+        if ($entrada % 2 == 0) {
             return json_encode([
                 "É par"
             ]);

@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioTresFormRequest;
 use Illuminate\Http\Request;
 
 class ExercicioTresController extends Controller
 {
-    public function media(Request $request)
+    public function media(ExercicioTresFormRequest $request)
     {
         
 

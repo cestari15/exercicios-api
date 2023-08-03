@@ -23,32 +23,32 @@ class ExercicioOnzeFormRequest extends FormRequest
      */
     public function rules(): array
     {
+        
         return [
-            'n1' => 'require|numeric',
-            'n2' => 'require|numeric',
-            'n3' => 'require|numeric',
-            'operacao' => 'require|string',
+            'n1' => 'required|numeric',
+            'n2' => 'required|numeric',
+            'operacao' => 'required|string',
         ];
     }
 
-    public function failedValidator(Validator $validator){
+    public function failedValidation(Validator $validator)
+    {
         throw new HttpResponseException(
             response()->json([
+
                 'success' => false,
                 'error' => $validator->errors()
             ])
-            );
+        );
     }
 
     public function messages(){
         return [
-            'n1.require' => 'Preencha o campo',
+            'n1.required' => 'Preencha o campo',
             'n1.numeric' => 'Preencha o campo com um numero',
-            'n2.require' => 'Preencha o campo',
+            'n2.required' => 'Preencha o campo',
             'n2.numeric' => 'Preencha o campo com um numero',
-            'n3.require' => 'Preencha o campo',
-            'n3.numeric' => 'Preencha o campo com um numero',
-            'operacao.require' => 'Preencha o campo',
+            'operacao.required' => 'Preencha o campo',
             'operacao.string' => 'Preencha o campo com uma letra',
         ];
     }

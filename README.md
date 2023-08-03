@@ -23,7 +23,18 @@ Certifique-se de ter os seguintes requisitos atendidos antes de começar a traba
 ```
 cd exercicios-api
 ```
-
+3. Inicializando o Repositorio
+```
+composer update
+```
+4. Copiando o .env do exemplo
+```
+copy .env.exemple .env
+```
+5. Acessar o Visual Studio Code
+```
+code .
+```
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE), o que significa que você pode utilizá-lo livremente para fins educacionais, comerciais ou pessoais.

@@ -24,7 +24,7 @@ class ExercicioOitoFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'entrada' => 'require|numeric',
+            'entrada' => 'required|numeric',
         ];
     }
 
@@ -42,7 +42,7 @@ class ExercicioOitoFormRequest extends FormRequest
     public function menssages()
     {
         return [
-            'entrada.require' => 'Preencha o campo entrada',
+            'entrada.required' => 'Preencha o campo entrada',
             'entrada.numeric' => 'Coloque um numero no campo',
         ];
     }

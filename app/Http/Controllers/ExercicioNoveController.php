@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioNoveFormRequest;
 use Illuminate\Http\Request;
 
 class ExercicioNoveController extends Controller
 {
-    public function divisivelPeloUsuario(Request $request)
+    public function divisivelPeloUsuario(ExercicioNoveFormRequest $request)
     {
         $numero = [];
 

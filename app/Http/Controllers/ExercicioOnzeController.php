@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioOnzeFormRequest;
 use Illuminate\Http\Request;
 
 class ExercicioOnzeController extends Controller
 {
-    public function calculadora(Request $request)
+    public function calculadora(ExercicioOnzeFormRequest $request)
     {
         
         switch ($request->operação) {

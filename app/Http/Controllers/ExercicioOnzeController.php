@@ -10,7 +10,7 @@ class ExercicioOnzeController extends Controller
     public function calculadora(ExercicioOnzeFormRequest $request)
     {
         
-        switch ($request->operação) {
+        switch ($request->operaçao) {
             case 'M':
                 $resultado = $request->n1 * $request->n2;
                         

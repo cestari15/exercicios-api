@@ -40,8 +40,8 @@ class ExercicioSeisFormRequest extends FormRequest
 
     public function menssages(){
         return [
-            'n1' => 'Preencha o campo',
-            'n1' => 'Preencha o campo com um numero',
+            'n1.require' => 'Preencha o campo',
+            'n1.numeric' => 'Preencha o campo com um numero',
         ];
     }
   

@@ -25,7 +25,7 @@ class ExercicioSeisFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'n1' => 'require|numeric',
+            'n1' => 'required|numeric',
         ];
     }
 
@@ -40,7 +40,7 @@ class ExercicioSeisFormRequest extends FormRequest
 
     public function menssages(){
         return [
-            'n1.require' => 'Preencha o campo',
+            'n1.required' => 'Preencha o campo',
             'n1.numeric' => 'Preencha o campo com um numero',
         ];
     }

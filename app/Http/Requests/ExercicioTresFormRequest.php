@@ -41,12 +41,12 @@ class ExercicioTresFormRequest extends FormRequest
 
     public function messages(){
         return [
-            'n1' => 'preencha o campo n1',
-            'n1' => 'coloque um numero no espaço n1',
-            'n2' => 'preencha o campo n2',
-            'n2' => 'coloque um numero no espaço n2',
-            'n3' => 'preencha o campo n3',
-            'n3' => 'coloque um numero no espaço n3',
+            'n1.require' => 'preencha o campo n1',
+            'n1.numeric' => 'coloque um numero no espaço n1',
+            'n2.require' => 'preencha o campo n2',
+            'n2.numeric' => 'coloque um numero no espaço n2',
+            'n3.require' => 'preencha o campo n3',
+            'n3.numeric' => 'coloque um numero no espaço n3',
         ];
     }
 

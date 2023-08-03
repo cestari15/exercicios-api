@@ -24,7 +24,7 @@ class ExercicioNoveFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'divisivel' => 'require|numeric',
+            'divisivel' => 'required|numeric',
         ];
     }
 
@@ -39,7 +39,7 @@ class ExercicioNoveFormRequest extends FormRequest
 
     public function messages(){
         return [
-            'divisivel.require' => 'Preencha o campo',
+            'divisivel.required' => 'Preencha o campo',
             'divisivel.numeric' => 'Preencha o campo com um numero',
         ];
     }

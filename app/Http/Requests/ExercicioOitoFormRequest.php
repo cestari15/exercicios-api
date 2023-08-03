@@ -33,13 +33,14 @@ class ExercicioOitoFormRequest extends FormRequest
         throw new HttpResponseException(
             response()->json([
                 'success' => false,
-                'error' => $validator ->errors()
+                'error' => $validator->errors()
             ])
-            );
+        );
     }
 
 
-    public function menssages(){
+    public function menssages()
+    {
         return [
             'entrada' => 'Preencha o campo entrada',
             'entrada' => 'Coloque um numero no campo',

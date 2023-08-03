@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioDoisFormRequest;
 use Illuminate\Http\Request;
 
 class ExercicioDoisController extends Controller
 {
-    public function retornarMaior(Request $request){
+    public function retornarMaior(ExercicioDoisFormRequest $request){
 
         if($request->primeira_entrada > $request->segunda_entrada){
             return json_encode([

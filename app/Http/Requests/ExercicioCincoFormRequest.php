@@ -39,8 +39,8 @@ class ExercicioCincoFormRequest extends FormRequest
 
     public function messages(){
         return  [
-            'numero' => 'preencha o campo',
-            'numero' => 'preencha o campo com um numero ou sem a classe string',
+            'numero.require' => 'preencha o campo',
+            'numero.numeric' => 'preencha o campo com um numero ou sem a classe string',
         ];
     }
 }

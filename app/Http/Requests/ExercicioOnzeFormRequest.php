@@ -49,7 +49,7 @@ class ExercicioOnzeFormRequest extends FormRequest
             'n2.required' => 'Preencha o campo',
             'n2.numeric' => 'Preencha o campo com um numero',
             'operacao.required' => 'Preencha o campo',
-            'operacao.string' => 'Preencha o campo com uma letra',
+            'operacao.string' => 'Preencha o campo com as letras A S M D',
         ];
     }
 }

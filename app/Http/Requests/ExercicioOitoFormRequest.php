@@ -42,8 +42,8 @@ class ExercicioOitoFormRequest extends FormRequest
     public function menssages()
     {
         return [
-            'entrada' => 'Preencha o campo entrada',
-            'entrada' => 'Coloque um numero no campo',
+            'entrada.require' => 'Preencha o campo entrada',
+            'entrada.numeric' => 'Coloque um numero no campo',
         ];
     }
 }

@@ -24,8 +24,8 @@ class ExercicioDoisFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'primeira_entrada' => 'require|numeric',
-            'segunda_entrada' => 'require|numeric',
+            'primeira_entrada' => 'required|numeric',
+            'segunda_entrada' => 'required|numeric',
         ];
     }
 
@@ -41,9 +41,10 @@ class ExercicioDoisFormRequest extends FormRequest
 
     public function messages(){
         return [
-            'primeira_entrada.require' => 'Preencha o campo',
+            'primeira_entrada.required' => 'Preencha o campo',
             'primera_entrada.numeric' => 'Preencha o campo com um numero',
-            'segunda_entrada.require' => 'Preencha o campo',
+            'primera_entrada.string' => 'Preencha o campo com um numero',
+            'segunda_entrada.required' => 'Preencha o campo',
             'segunda_entrada.numeric' => 'Preencha o campo com um numero',
         ];
     }

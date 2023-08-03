@@ -24,7 +24,7 @@ class ExercicioQuatroFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'entrada' => 'require|numeric',
+            'entrada' => 'required|numeric',
         ];
     }
 
@@ -40,7 +40,7 @@ class ExercicioQuatroFormRequest extends FormRequest
 
     public function messages(){
         return [
-            'entrada.require' => 'preencha o campo',
+            'entrada.required' => 'preencha o campo',
             'entrada.numeric' => 'coloque um numero no campo'
         ];
     }

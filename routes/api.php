@@ -47,7 +47,7 @@ Route::post('exercicio/oito',
 Route::get('exercicio/dez', 
 [ExercicioDezController::class, 'impares']);
 
-Route::post('exercicios/onze', [ExercicioOnzeController::class, 'Calculadora']);
+Route::post('exercicios/onze', [ExercicioOnzeController::class, 'calculadora']);
 
 Route::get('exercicio/doze',
 [ExercicioDozeController::class, 'decrescente']);

@@ -40,8 +40,8 @@ class ExercicioQuatroFormRequest extends FormRequest
 
     public function messages(){
         return [
-            'entrada' => 'preencha o campo',
-            'entrada' => 'coloque um numero no campo'
+            'entrada.require' => 'preencha o campo',
+            'entrada.numeric' => 'coloque um numero no campo'
         ];
     }
 }
